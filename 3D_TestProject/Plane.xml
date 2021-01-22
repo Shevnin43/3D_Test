@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<BasePlane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<StartPoint>
+		<X>0</X>
+		<Y>0</Y>
+		<Z>100</Z>
+	</StartPoint>
+	<Vector>
+		<X>0</X>
+		<Y>0</Y>
+		<Z>1</Z>
+	</Vector>   
+</BasePlane>

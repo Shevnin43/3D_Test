@@ -1,0 +1,120 @@
+﻿<Application x:Class="_3D_TestProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_3D_TestProject"
+             StartupUri="Views/Model3DView.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="buttonLoad" TargetType="Button"  >
+            <Grid>
+                <Rectangle Width="150" Height="30" x:Name="outerRect" RadiusX="10" RadiusY="10" StrokeThickness="3" Stroke="Green">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <GradientStop Offset="0" Color="Blue"/>
+                            <GradientStop Offset="1" Color="Red"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Width="145" Height="25" x:Name="innerRect" RadiusX="10" RadiusY="10">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <GradientStop Offset="0" Color="White"/>
+                            <GradientStop Offset="1" Color="Transparent"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Viewbox>
+                    <ContentPresenter x:Name="myPresenter" Margin="10" TextBlock.FontWeight="Bold" TextBlock.Foreground="Black" Content="{TemplateBinding Content}"/>
+                </Viewbox>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter TargetName="outerRect" Property="Fill">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                                <GradientStop Offset="0" Color="Green"/>
+                                <GradientStop Offset="1" Color="Yellow"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    
+                </Trigger>
+                <Trigger Property="IsPressed" Value="true">
+                    <Setter Property="RenderTransform" >
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.9" ScaleY="1" CenterX="75" CenterY="13"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter TargetName="myPresenter" Property="TextBlock.Foreground" Value="Red"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter TargetName="outerRect" Property="Fill">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                                <GradientStop Offset="0" Color="DarkGray"/>
+                                <GradientStop Offset="1" Color="White"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter TargetName="outerRect" Property="Stroke" Value="DarkGray"/>
+                    <Setter TargetName="myPresenter" Property="TextBlock.Foreground" Value="DarkGray"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="buttonMove" TargetType="RepeatButton">
+            <Grid>
+                <Rectangle Width="30" Height="30" x:Name="outerRect" RadiusX="10" RadiusY="10" StrokeThickness="3" Stroke="Green">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <GradientStop Offset="0" Color="Blue"/>
+                            <GradientStop Offset="1" Color="Red"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Width="25" Height="25" x:Name="innerRect" RadiusX="10" RadiusY="10">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <GradientStop Offset="0" Color="White"/>
+                            <GradientStop Offset="1" Color="Transparent"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Viewbox>
+                    <ContentPresenter x:Name="myPresenter" Margin="5" TextBlock.FontSize="5" TextBlock.FontWeight="Bold" TextBlock.Foreground="Black" Content="{TemplateBinding Content}"/>
+                </Viewbox>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter TargetName="outerRect" Property="Fill">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                                <GradientStop Offset="0" Color="Green"/>
+                                <GradientStop Offset="1" Color="Yellow"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter TargetName="myPresenter" Property="TextBlock.FontStyle" Value="Italic"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="true">
+                    <Setter Property="RenderTransform" >
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.9" ScaleY="0.9" CenterX="20" CenterY="20"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter TargetName="myPresenter" Property="TextBlock.Foreground" Value="Red"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter TargetName="outerRect" Property="Fill">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                                <GradientStop Offset="0" Color="DarkGray"/>
+                                <GradientStop Offset="1" Color="White"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter TargetName="outerRect" Property="Stroke" Value="DarkGray"/>
+                    <Setter TargetName="myPresenter" Property="TextBlock.Foreground" Value="DarkGray"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>

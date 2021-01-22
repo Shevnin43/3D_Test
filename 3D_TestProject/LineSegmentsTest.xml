@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ArrayOfBaseLineSegment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BaseLineSegment Id="1">
+    <X>100</X>
+    <Y>200</Y>
+    <Z>100</Z>
+    <Length>200</Length>
+	<Vector>oX</Vector>    
+  </BaseLineSegment>
+</ArrayOfBaseLineSegment>

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<ArrayOfBaseLineSegment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BaseLineSegment Id="1">
+	<StartPoint>
+		<X>-200</X>
+		<Y>100</Y>
+		<Z>200</Z>
+	</StartPoint>
+	<Vector>
+		<X>0</X>
+		<Y>1</Y>
+		<Z>0</Z>
+	</Vector>
+    <Length>500</Length>
+  </BaseLineSegment>
+  <BaseLineSegment Id="2">
+	<StartPoint>
+		<X>200</X>
+		<Y>-200</Y>
+		<Z>100</Z>
+	</StartPoint>
+	<Vector>
+		<X>1</X>
+		<Y>0</Y>
+		<Z>0</Z>
+	</Vector>
+    <Length>100</Length>
+  </BaseLineSegment>
+  <BaseLineSegment Id="3">
+	<StartPoint>
+		<X>200</X>
+		<Y>150</Y>
+		<Z>-300</Z>
+	</StartPoint>
+	<Vector>
+		<X>0</X>
+		<Y>0</Y>
+		<Z>1</Z>
+	</Vector>
+    <Length>300</Length>
+  </BaseLineSegment>
+  <BaseLineSegment Id="4">
+	<StartPoint>
+		<X>-200</X>
+		<Y>50</Y>
+		<Z>-200</Z>
+	</StartPoint>
+	<Vector>
+		<X>1</X>
+		<Y>0</Y>
+		<Z>0</Z>
+	</Vector>
+    <Length>400</Length>
+  </BaseLineSegment>
+  <BaseLineSegment Id="5">
+	<StartPoint>
+		<X>100</X>
+		<Y>-200</Y>
+		<Z>150</Z>
+	</StartPoint>
+	<Vector>
+		<X>0</X>
+		<Y>1</Y>
+		<Z>0</Z>
+	</Vector>
+    <Length>500</Length>
+  </BaseLineSegment>
+  <BaseLineSegment Id="6">
+	<StartPoint>
+		<X>100</X>
+		<Y>200</Y>
+		<Z>150</Z>
+	</StartPoint>
+	<Vector>
+		<X>0</X>
+		<Y>0</Y>
+		<Z>1</Z>
+	</Vector>
+    <Length>200</Length>
+  </BaseLineSegment>
+  <BaseLineSegment Id="7">
+	<StartPoint>
+		<X>200</X>
+		<Y>100</Y>
+		<Z>150</Z>
+	</StartPoint>
+	<Vector>
+		<X>0</X>
+		<Y>1</Y>
+		<Z>0</Z>
+	</Vector>
+    <Length>800</Length> 
+  </BaseLineSegment>
+</ArrayOfBaseLineSegment>
